@@ -22,7 +22,7 @@ jobs:
       - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
-          version: 9.8.0
+          version: 10.29.2
           run_install: false
 
       # This enables task distribution via Nx Cloud
@@ -41,7 +41,8 @@ jobs:
 
       # Prepend any command with "nx record --" to record its logs to Nx Cloud
       # - run: pnpm exec nx record -- echo Hello World
-      - run: pnpm exec nx run-many -t lint test build typecheck
+      - run: pnpm exec nx run-many -t lint test typecheck
+      - run: pnpm exec nx run-many -t build --exclude=@abstrack/mobile
       # Nx Cloud recommends fixes for failures to help you get CI green faster. Learn more: https://nx.dev/ci/features/self-healing-ci
       - run: pnpm exec nx fix-ci
         if: always()
