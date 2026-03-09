@@ -72,3 +72,9 @@ coverage/
 
 # OS
 *.log
+test-output
+
+# Next.js
+.next
+out
+vitest.config.*.timestamp*

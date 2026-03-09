@@ -1,4 +1,15 @@
 packages:
-  - "packages/*"
-
+  - 'packages/*'
+  - 'apps/*'
 autoInstallPeers: true
+ignoredBuiltDependencies:
+  - 'detox'
+  - 'dtrace-provider'
+  - 'less'
+  - 'unrs-resolver'
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - 'esbuild'
+  - 'nx'
+  - 'sharp'

@@ -2,5 +2,33 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/mobile"
+    },
+    {
+      "path": "./apps/web-e2e"
+    },
+    {
+      "path": "./apps/web"
+    },
+    {
+      "path": "./apps/practitioner-e2e"
+    },
+    {
+      "path": "./apps/practitioner"
+    },
+    {
+      "path": "./packages/types"
+    },
+    {
+      "path": "./packages/supabase"
+    },
+    {
+      "path": "./packages/ui"
+    },
+    {
+      "path": "./packages/powersync"
+    }
+  ]
 }
