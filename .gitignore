@@ -17,6 +17,9 @@ node_modules
 .settings/
 *.sublime-workspace
 
+# Cursor (may contain API keys in .cursor/mcp.json)
+.cursor/
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
